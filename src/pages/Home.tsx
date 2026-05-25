@@ -183,7 +183,7 @@ export function Home() {
       {/* Navbar */}
       <div className="top-navbar">
         <div className="flex-1 text-white">
-          Naxora 🚀
+          Genos 🚀
         </div>
         <div>
           <WalletMultiButton />
