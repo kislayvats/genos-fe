@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Home as  Twitter, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Home as Twitter, Linkedin, Mail, ArrowUp } from 'lucide-react';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
@@ -8,7 +8,7 @@ export function Home() {
   const [prompt, setPrompt] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
-  
+
   // Use wallet adapter
   const { publicKey } = useWallet();
 
@@ -179,7 +179,7 @@ export function Home() {
           }
         `}
       </style>
-      
+
       {/* Navbar */}
       <div className="top-navbar">
         <div className="flex-1 text-white">
@@ -189,7 +189,7 @@ export function Home() {
           <WalletMultiButton />
         </div>
       </div>
-      
+
       {/* Sidebar */}
       {/* <div className="sidebar">
         <div className="p-4 flex justify-between items-center border-b border-blue-900/30">
@@ -201,7 +201,7 @@ export function Home() {
                 <polygon points="50,30 70,40 70,60 50,70 30,60 30,40" fill="rgba(78, 159, 255, 0.5)" />
               </svg>
             </div>
-            {sidebarOpen && <h2 className="text-blue-400 font-bold">Nexora</h2>}
+            {sidebarOpen && <h2 className="text-blue-400 font-bold">Genos</h2>}
           </div>
           <button 
             onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -221,7 +221,7 @@ export function Home() {
           </a>
         </div>
       </div> */}
-      
+
       {/* Main content */}
       <div className="bg-black main-content" style={{ backgroundImage: "url('/bg/bg2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="absolute inset-0 bg-black/50"></div>
@@ -230,13 +230,13 @@ export function Home() {
             {/* Centered content */}
             <div className="w-full max-w-4xl z-10 text-center" style={{ animation: "slideUp 0.8s ease-out 0.2s both" }}>
               <div className="mb-12">
-                <h1 className="text-4xl font-bold text-white mb-6 leading-tight" 
-                    style={{ animation: "slideUp 0.6s ease-out 0.8s both" }}>
+                <h1 className="text-4xl font-bold text-white mb-6 leading-tight"
+                  style={{ animation: "slideUp 0.6s ease-out 0.8s both" }}>
                   Where Thought Becomes Agent. <br />And Agents Become Reality
                 </h1>
                 <p className="text-xl text-blue-200 mb-8"
-                   style={{ animation: "slideUp 0.6s ease-out 1s both" }}>
-                  Speak or type your vision. Nexora invokes an autonomous agent to build it.
+                  style={{ animation: "slideUp 0.6s ease-out 1s both" }}>
+                  Speak or type your vision. Genos invokes an autonomous agent to build it.
                 </p>
               </div>
 
@@ -248,33 +248,33 @@ export function Home() {
                     placeholder="Enter a prompt or goal..."
                     className="terminal-input  border-0 shadow-none w-full min-h-[160px] text-lg resize-none focus:outline-none focus:ring-0 placeholder-blue-300/50 backdrop-filter: blur(8px)"
                   />
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="absolute bottom-6 right-6 p-1 text-white hover:text-white bg-gray-100 rounded-full border border-blue-500/30 hover:bg-gray-700/60 hover:border-blue-400/50 transition-all flex items-center gap-2 opacity-100 "
                   >
                     {/* <span className="text-sm font-medium">Send</span> */}
                     {/* <Send className="w-4 h-4" /> */}
-                    <ArrowUp className='text-black hover:text-white'/>
+                    <ArrowUp className='text-black hover:text-white' />
                   </button>
                 </div>
-                
+
                 <div className="mt-6">
                   <div className="flex flex-wrap gap-2 justify-center">
-                    <button 
+                    <button
                       type="button"
                       onClick={() => setPrompt("Generate a landing page for your memecoin")}
                       className="px-3 py-2 bg-blue-900/30 text-blue-200 text-sm rounded-md border border-blue-500/30 hover:bg-blue-800/40 hover:border-blue-400/50 transition-all"
                     >
                       Generate a landing page for your memecoin
                     </button>
-                    <button 
+                    <button
                       type="button"
                       onClick={() => setPrompt("Build a Solana portfolio tracker using free APIs")}
                       className="px-3 py-2 bg-blue-900/30 text-blue-200 text-sm rounded-md border border-blue-500/30 hover:bg-blue-800/40 hover:border-blue-400/50 transition-all"
                     >
                       Build a Solana portfolio tracker using free APIs
                     </button>
-                    <button 
+                    <button
                       type="button"
                       onClick={() => setPrompt("Build a site showing crypto related news")}
                       className="px-3 py-2 bg-blue-900/30 text-blue-200 text-sm rounded-md border border-blue-500/30 hover:bg-blue-800/40 hover:border-blue-400/50 transition-all"
@@ -287,7 +287,7 @@ export function Home() {
             </div>
           </div>
         </div>
-        
+
         {/* Social Icons */}
         <div className="social-icons">
           <a href="https://x.com/krshxxna" className="social-icon">
