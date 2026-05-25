@@ -290,13 +290,11 @@ export function Home() {
 
         {/* Social Icons */}
         <div className="social-icons">
-          <a href="https://x.com/krshxxna" className="social-icon">
-            <Twitter className="w-5 h-5 text-blue-400" />
-          </a>
-          <a href="https://www.linkedin.com/in/krishna-mohan-194124167/" className="social-icon">
+
+          <a href="https://www.linkedin.com/in/kislayvats/" className="social-icon">
             <Linkedin className="w-5 h-5 text-blue-400" />
           </a>
-          <a href="mailto:krishanmohank974@gmail.com" target='_blank' className="social-icon">
+          <a href="mailto:kislayvats22@gmail.com" target='_blank' className="social-icon">
             <Mail className="w-5 h-5 text-blue-400" />
           </a>
         </div>
